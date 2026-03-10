@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* View Transitions for theme toggle */
+::view-transition-old(root) {
+  display: none;
+}
+
+::view-transition-new(root) {
+  display: block !important;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: inherit;
+}
+
+html.dark ::view-transition-new(root) {
+  background: #0f172a;
+}
+
+html:not(.dark) ::view-transition-new(root) {
+  background: #f8fafc;
+}
+
+/* Ocultar scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Transiciones suaves para cambio de tema */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

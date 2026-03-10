@@ -1,0 +1,47 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero/Hero.astro';
+import Problem from '../components/Problem.astro';
+import Comparison from '../components/Comparison.astro';
+import Features from '../components/Features.astro';
+import Pricing from '../components/Pricing.astro';
+import Footer from '../components/Footer.astro';
+import NavigationDots from '../components/NavigationDots.astro';
+---
+
+<Layout>
+  <Navbar />
+  <NavigationDots />
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section id="hero" class="pt-16">
+      <Hero />
+    </section>
+
+    <!-- SECTION 2: Problem -->
+    <section id="problema">
+      <Problem />
+    </section>
+
+    <!-- SECTION 3: Comparison -->
+    <section id="comparacion">
+      <Comparison />
+    </section>
+
+    <!-- SECTION 4: Features -->
+    <section id="solucion">
+      <Features />
+    </section>
+
+    <!-- SECTION 5: Pricing -->
+    <section id="precios">
+      <Pricing />
+    </section>
+
+    <!-- SECTION 6: Footer -->
+    <section id="footer">
+      <Footer />
+    </section>
+  </main>
+</Layout>
