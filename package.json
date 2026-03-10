@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^13.0.1",
     "@astrojs/react": "^4.4.2",
     "@tailwindcss/vite": "^4.2.1",
     "@types/react": "^19.2.14",
@@ -17,6 +18,7 @@
     "framer-motion": "^12.35.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "tailwindcss": "^4.2.1"
+    "tailwindcss": "^4.2.1",
+    "wrangler": "^4.71.0"
   }
 }
